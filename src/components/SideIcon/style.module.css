@@ -1,0 +1,18 @@
+.root{
+  margin-top: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+  color: var(--verdecito);
+  background-color: var(--griscl);
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+.root:hover{
+  border-radius: 15px;
+  transition: 0.3s;
+  color:white;
+  background-color: var(--verdecito);
+  }  

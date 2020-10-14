@@ -1,0 +1,20 @@
+.root {
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-top: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background-color: var(--griscl);
+}
+  
+.root:hover{
+  border-radius: 15px;
+  transition: 0.3s;
+  background-color: var(--azulcito);
+}
+
+.root:first-child{
+  margin-top: 0;
+}

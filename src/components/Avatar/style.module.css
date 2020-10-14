@@ -1,0 +1,35 @@
+.avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+.estado{
+  height: 15px;
+  width: 15px;
+  background-color: var(--grislt);
+  border-radius: 50%;
+  border: 3px solid var(--grisin);
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+}
+
+.root:hover .estado{
+  border-color: var(--grisho);
+}
+
+.activo{
+  background-color: var(--verdecito);
+}
+
+.ocupado{
+  background-color: var(--rojito);
+}
+
+.ausente{
+  background-color: var(--naranjun);
+}

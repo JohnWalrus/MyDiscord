@@ -1,0 +1,35 @@
+.root{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 6px;
+  color: var(--grislt);
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nickname{
+  font-size: 16px;
+  flex-basis: 100%;
+  margin-left: 10px;
+}
+
+.root:hover{
+  background-color: var(--grisho);
+  color: var(--blanquito);
+}
+
+.ievil span{
+  font-size: 18px;
+}
+
+.ievil{
+  display: none;
+}
+
+.root:hover .ievil{
+  display: block;
+}
+

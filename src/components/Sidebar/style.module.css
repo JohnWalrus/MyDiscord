@@ -1,0 +1,22 @@
+.sidebar{
+  background-color: var(--grisoc);
+  width: 72px;
+  padding: 12px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar >*{
+  flex-shrink: 0;
+}
+
+.sidebar hr {
+  color: #2d2f32;
+  margin: 8px 6px;
+  border-width: 2px;
+  }
+

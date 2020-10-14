@@ -1,0 +1,12 @@
+.root{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background-color: var(--griscl);
+  color: var(--blanquito);
+  border-radius: 3px;
+}
+
+.root:hover{
+  background-color: var(--grisho);
+}

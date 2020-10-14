@@ -1,0 +1,23 @@
+.root {
+  width: 100%;
+  display: flex;
+  background-color: var(--griscl);
+  flex-direction: column;
+  position: relative;
+}
+
+.topbar {
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid var(--grisoc);
+  display: flex;
+  justify-content: space-between;
+}
+
+.friends{
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70px;
+}

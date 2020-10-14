@@ -1,0 +1,174 @@
+#chatbar{
+    background-color: var(--grisin);
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.titulo {
+    padding: 10px;
+    border-bottom: 1px solid #202225;
+}
+.titulo button{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    border: none;
+    border-radius: 4px;
+    background-color: #202225;
+    color: #72767d;
+    font-size: 14px;
+}
+.lista {
+    overflow-y: auto;
+    overflow-x: visible;
+    padding: 10px;
+    flex-basis: 100%;
+
+}
+.lista >*{
+    margin-bottom: 2px;
+}
+.lista .horror{
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+    border: none;
+    background-color: var(--grisin);
+    color: #72767d;
+    font-size: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.lista button:hover{
+    background-color: var(--grisho);
+    color: whitesmoke;
+}
+
+.lista button .text{
+    padding-left: 10px;
+}
+
+.lista .dmadd {
+    border: none;
+    background-color: var(--grisin);
+    color: #72767d;
+    position: relative;
+    padding: 0;
+}
+ .dmadd >span{
+     font-size: 18px;
+ }
+.lista h6{
+    font-size: 12px;
+    color: #72767d;
+    padding: 0;
+}
+
+.lista .dmadd:hover{
+    background-color: var(--grisin);
+    
+}
+
+.dmcaja {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.lista .gente{
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.estado{
+    height: 15px;
+    width: 15px;
+    background-color: var(--verdecito);
+    border-radius: 50%;
+    border: 3px solid var(--grisin);
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+}
+
+.gente:hover .estado{
+    border-color: var(--grisho);
+}
+.gente .name{
+    font-size: 16px;
+    flex-basis: 100%;
+    margin-left: 10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.gente .ievil span{
+    font-size: 18px;
+}
+.gente .ievil{
+    display: none;
+}
+.gente:hover .ievil{
+    display: block;
+}
+
+.dmcaja .dmadd .hidden{
+    display: none;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 14px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    transform: translateX(-50%);
+    left: 50%;
+    padding: 8px;
+    white-space: nowrap;
+    }
+    
+.hidden:after{
+    content: "";
+    border-top: 4px solid black;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.dmcaja .dmadd:hover .hidden{
+    display: block;
+}
+
+#chatbar .opciones{
+    height: 60px;
+    width: 100%;
+    background-color: #292b2f;
+    display: flex;
+}
+
+.usuario{
+    flex-basis: 100%;
+}
