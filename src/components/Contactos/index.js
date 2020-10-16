@@ -2,7 +2,7 @@ import React from 'react';
 import FriendsButton from '../FriendsButton';
 import styles from './style.module.css';
 
-function ChatBox(props) {
+function Contactos(props) {
 
   return (
     <div className={styles.root}> 
@@ -28,4 +28,4 @@ function ChatBox(props) {
 }
 
 
-export default ChatBox;
+export default Contactos;

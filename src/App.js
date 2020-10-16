@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Sidebar from "./components/Sidebar"
 import ChatBar from "./components/ChatBar"
-import ChatBox from "./components/ChatBox"
+import Contactos from "./components/Contactos"
 
 function App() {
   const estados = {
@@ -108,7 +108,7 @@ function App() {
     <>
       <Sidebar servers={servers}/>
       <ChatBar people={people}/>
-      <ChatBox/>
+      <Contactos/>
      
     </>
   );
