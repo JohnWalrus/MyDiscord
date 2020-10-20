@@ -8,5 +8,6 @@
 }
 
 .root:hover{
+  color: whitesmoke;
   background-color: var(--grisho);
 }
