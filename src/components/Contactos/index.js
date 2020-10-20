@@ -1,9 +1,10 @@
 import React from 'react';
 import FriendsButton from '../FriendsButton';
 import styles from './style.module.css';
-import SettingButton from '../SettingButton'
+import SettingButton from '../SettingButton';
+import Avatar from '../Avatar';
 
-function Contactos(props) {
+function Contactos({people=[]}) {
 
   return (
     <div className={styles.root}> 
@@ -31,7 +32,23 @@ function Contactos(props) {
         <div className={styles.botbox}>
 
           <div className={styles.onlinelist}>
-              
+            {people.filter(person=>person.estado).map((person, i) => <div className={styles.contact} key={i}>
+              <div className={styles.content}>
+                <div className={styles.conperson}>
+                  <Avatar image={person.image} estado={person.estado}/>
+                  <p>{person.nickname}</p>
+                </div>
+                <div className={styles.conicon}>
+                  <span className="material-icons">
+                    chat_bubble
+                  </span>
+                  <span className="material-icons">
+                    more_vert
+                  </span>
+                </div>
+              </div>
+
+            </div>)}
           </div>
 
           <div className={styles.activenow}>

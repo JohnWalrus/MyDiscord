@@ -8,7 +8,7 @@ function Sidebar({servers=[]}) {
     <aside className={styles.sidebar}>
       <ServerButton image={`${process.env.PUBLIC_URL}/dislogo.png`} size={60}/>
       <hr/>
-      {servers.map(s => <ServerButton image={s.image} />)}
+      {servers.map(s => <ServerButton image={s.image} key={s.id}/>)}
       <SideIcon icon="add"/>
       <SideIcon icon="explore"/>
       <SideIcon icon="sports_kabaddi"/>

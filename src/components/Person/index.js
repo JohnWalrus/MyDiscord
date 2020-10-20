@@ -11,7 +11,7 @@ function Person(props) {
         {props.nickname}
       </div>
       <div className={styles.ievil}> 
-         <span class="material-icons">
+         <span className="material-icons">
            clear
          </span>
       </div>
