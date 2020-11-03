@@ -11,23 +11,60 @@
   padding: 10px;
   border-bottom: 1px solid var(--grisoc);
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.friends{
+.topone{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.topone *{ 
+  margin: 0 6px;
+}
+
+.addfriend{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background-color: var(--verdecito);
+  color: white;
+  padding: 2px 8px 3px 8px;
+  border-radius: 3px;
+  box-sizing: content-box;
+}
+
+.toptwo{
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.toptwo span{
+  font-size: 24px;
+  color: var(--blancusco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.topone .friends{
   font-size: 16px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  width: 70px;
   color: white;
+  padding: 5px;
+  margin: 0;
 }
 
 .spacebar{
   background-color: blue;
   height: 25px;
   width: 1px;
+  margin: 0 8px;
 }
 
 .botbox{
@@ -39,6 +76,8 @@
 .onlinelist{ 
   width: 100%;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .activenow{
@@ -51,6 +90,7 @@
   padding: 0 10px;
   width: 100%;
   border-radius: 10px;
+  box-sizing: content-box;
 }
 
 .content{
@@ -58,7 +98,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 5px 0;
   border-top: 1px solid red;
 }
 
@@ -73,13 +113,31 @@
   color: white;
 }
 
-.content .conicon{
-  width: 50px;
-  display: flex;
-}
-
 .content .conperson{
   display: flex;
   align-items: center;
   width: 100%;
+}
+
+.conectado {
+  color: var(--blanquito);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.conicon {
+  border-radius: 50%;
+  background-color: var(--grisin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--blancusco);
+  margin: 5px;
+}
+.conicon span {
+  font-size: 18px;
 }

@@ -4,10 +4,12 @@
   font-size: 16px;
   background-color: var(--griscl);
   color: var(--blanquito);
+  padding: 2px 3px 3px 3px;
   border-radius: 3px;
+  box-sizing: content-box;
 }
 
 .root:hover{
   color: whitesmoke;
-  background-color: var(--verdecito);
+  background-color: var(--grisin);
 }
