@@ -1,15 +1,11 @@
 import React from 'react';
+import USER_STATUS from './constants/user_status';
 import './App.css';
 import Sidebar from "./components/Sidebar"
 import ChatBar from "./components/ChatBar"
 import Contactos from "./components/Contactos"
 
 function App() {
-  const estados = {
-    activo:"activo",
-    ausente: "ausente",
-    ocupado: "ocupado",
-  }
   const servers = [
     {
       id:1,
@@ -65,27 +61,27 @@ function App() {
     {
       image: `${process.env.PUBLIC_URL}/Brachypelma-hamorii.jpg`,
       nickname: "Hamorii",
-      estado: estados.activo,
+      estado: USER_STATUS.activo,
     },
     {
       image: `${process.env.PUBLIC_URL}/cornfed.png`,
       nickname: "Cornfed",
-      estado: estados.ocupado,
+      estado: USER_STATUS.ocupado,
     },
     {
       image: `${process.env.PUBLIC_URL}/juorgullosa.jpg`,
       nickname: "JU!",
-      estado: estados.ausente,
+      estado: USER_STATUS.ausente,
     },
     {
       image:`${process.env.PUBLIC_URL}/kid-bastion.jpg`,
       nickname: "Kid",
-      estado: estados.activo,
+      estado: USER_STATUS.activo,
     },
     {
       image:`${process.env.PUBLIC_URL}/life.jpg`,
       nickname: "Pepito",
-      estado: estados.activo,
+      estado: USER_STATUS.activo,
     },
     {
       image:`${process.env.PUBLIC_URL}/madre.jpg`,
