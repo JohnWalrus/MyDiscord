@@ -45,7 +45,10 @@ function Contactos({people=[]}) {
               <div className={styles.content}>
                 <div className={styles.conperson}>
                   <Avatar image={person.image} estado={person.estado}/>
-                  <p>{person.nickname}</p>
+                  <div className={styles.user_data}>
+                    <p className={styles.user_nickname}>{person.nickname}<span className={styles.user_id}>#{i}</span></p>
+                    <p className={styles.user_status}>{person.estado}</p>
+                  </div>
                 </div>
                 <div className={styles.conicon}>
                   <span className="material-icons">

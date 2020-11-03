@@ -61,7 +61,7 @@
 }
 
 .spacebar{
-  background-color: blue;
+  background-color: var(--grismasfrio);
   height: 25px;
   width: 1px;
   margin: 0 8px;
@@ -90,7 +90,6 @@
   padding: 0 10px;
   width: 100%;
   border-radius: 10px;
-  box-sizing: content-box;
 }
 
 .content{
@@ -99,15 +98,39 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
-  border-top: 1px solid red;
+  border-top: 1px solid var(--grismasfrio);
+  padding: 8px 0px;
+}
+
+.user_id{
+  color: var(--blanquito);
+  font-size: 14px;
+  display: none;
+  font-weight: normal;
+}
+
+.user_data{
+  padding-left: 10px;
+}
+
+.user_status{
+  color: var(--blanquito);
+  font-size: 14px;
 }
 
 .contact:hover{
-  background-color: var(--grisin);
+  background-color: var(--grisfrio);
 }
 
-.content p{
-  padding-left: 10px;
+.content:hover, .contact:hover+.contact .content{
+  border-color: transparent;
+}
+
+.contact:hover .user_id{
+  display: inline;
+}
+
+.user_nickname{  
   font-weight: bold;
   font-size: 16px;
   color: white;

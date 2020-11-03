@@ -22,14 +22,14 @@
   border-color: var(--grisho);
 }
 
-.activo{
+.Conectado{
   background-color: var(--verdecito);
 }
 
-.ocupado{
+.Ocupado{
   background-color: var(--rojito);
 }
 
-.ausente{
+.Ausente{
   background-color: var(--naranjun);
 }
