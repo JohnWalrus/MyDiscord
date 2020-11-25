@@ -1,7 +1,7 @@
 const USER_STATUS = {
-  activo:  "activo",
-  ausente: "ausente",
-  ocupado: "ocupado",
+  activo:  "Conectado",
+  ausente: "Ausente",
+  ocupado: "Ocupado",
 }
 
 export default USER_STATUS;
