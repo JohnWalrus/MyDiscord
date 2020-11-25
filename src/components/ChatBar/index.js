@@ -27,7 +27,7 @@ function ChatBar({people=[]}){
         {people.map((s, i) => <Person {...s} key={i}/>)}
       </div>
       <div className={styles.setting}>
-        <Avatar image={`${process.env.PUBLIC_URL}/mamimi.jpg`} estado="activo" />
+        <Avatar image={`${process.env.PUBLIC_URL}/mamimi.jpg`} estado="Conectado" />
 
         <div className={styles.usuario}>
           <button>John Walrus</button>

@@ -4,7 +4,7 @@ import styles from './style.module.css';
 import Avatar from '../Avatar';
 
 function Contactos({people=[]}) {
-
+  const filteredPeople= people.filter(person=>(person.estado))
   return (
     <div className={styles.root}> 
       
@@ -40,9 +40,10 @@ function Contactos({people=[]}) {
 
       <div className={styles.botbox}>
           <div className={styles.onlinelist}>
-            <div className={styles.conectado}>CONECTADO -- 5</div>
-            {people.filter(person=>person.estado).map((person, i) => <div className={styles.contact} key={i}>
-              <div className={styles.content}>
+            <div className={styles.conectado}>CONECTADO — {filteredPeople.length}</div>
+            {filteredPeople
+              .map((person, i) => <div className={styles.contact} key={i}>
+                <div className={styles.content}>
                 <div className={styles.conperson}>
                   <Avatar image={person.image} estado={person.estado}/>
                   <div className={styles.user_data}>
@@ -60,7 +61,7 @@ function Contactos({people=[]}) {
                     more_vert
                   </span>
                 </div>
-              </div>
+                </div>
 
             </div>)}
           </div>
